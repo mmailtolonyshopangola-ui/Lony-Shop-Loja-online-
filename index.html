@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lony Shop Angola</title>
+<style>
+body{margin:0;font-family:Arial;background:#111;color:white}
+header{background:#050505;padding:20px;text-align:center}
+h1{color:#ffcc00}
+.banner{text-align:center;padding:25px}
+.produto{background:#222;padding:20px;margin:15px;border-radius:10px;text-align:center}
+button{background:#25d366;color:white;padding:14px;border:0;border-radius:8px;font-size:16px}
+.preco{color:#ffcc00;font-weight:bold}
+</style>
+</head>
+<body>
+<header>
+<h1>LONY SHOP ANGOLA</h1>
+<p>A tua loja online de confiança</p>
+</header>
+<div class="banner">
+<h2>Bem-vindo à nossa loja!</h2>
+<p>Encontra os teus produtos favoritos.</p>
+</div>
+<div class="produto">
+<div style="font-size:55px">👕</div>
+<h3>Produto 1</h3>
+<p>Contacta-nos para saber o preço.</p>
+<p class="preco">Preço sob consulta</p>
+<button onclick="encomendar('Produto 1')">Encomendar pelo WhatsApp</button>
+</div>
+<div class="produto">
+<div style="font-size:55px">👟</div>
+<h3>Produto 2</h3>
+<p>Contacta-nos para saber o preço.</p>
+<p class="preco">Preço sob consulta</p>
+<button onclick="encomendar('Produto 2')">Encomendar pelo WhatsApp</button>
+</div>
+<script>
+function encomendar(produto){
+window.open('https://wa.me/244923000000?text='+encodeURIComponent('Olá Lony Shop Angola! Quero encomendar: '+produto),'_blank');
+}
+</script>
+<footer style="text-align:center;padding:20px">
+<p>© 2026 Lony Shop Angola</p>
+</footer>
+</body>
+</html>
